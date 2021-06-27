@@ -1,0 +1,17 @@
+{
+    "name": "ahmedhelalahmed/abstract-factory-pattern-in-php",
+    "description": "Abstract factory design pattern in php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AbstractFactoryPatternInPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmed Helal Ahmed",
+            "email": "ahmed.helal.online@gmail.com"
+        }
+    ],
+    "require": {}
+}
