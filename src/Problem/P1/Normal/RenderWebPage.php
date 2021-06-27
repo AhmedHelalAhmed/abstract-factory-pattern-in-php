@@ -3,6 +3,7 @@
 
 namespace AbstractFactoryPatternInPhp\Problem\P1\Normal;
 
+use AbstractFactoryPatternInPhp\Problem\P1\Normal\Enums\RendererEnum;
 use Exception;
 
 /**
@@ -34,9 +35,9 @@ class RenderWebPage
     {
         $type = strtolower($type);
 
-        if ($type === 'twig') {
+        if ($type === RendererEnum::TWIG) {
             return $this->getPageInTwig();
-        } elseif ($type === 'php') {
+        } elseif ($type === RendererEnum::PHP) {
             return $this->getPageInPHP();
         }
 
