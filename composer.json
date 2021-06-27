@@ -5,7 +5,10 @@
     "autoload": {
         "psr-4": {
             "AbstractFactoryPatternInPhp\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "authors": [
         {
