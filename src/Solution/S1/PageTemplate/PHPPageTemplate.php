@@ -1,9 +1,9 @@
 <?php
 
 
-namespace AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\PageTemplate;
+namespace AbstractFactoryPatternInPhp\Solution\S1\PageTemplate;
 
-use AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\PageTemplate;
+use AbstractFactoryPatternInPhp\Solution\S1\PageTemplate;
 use AbstractFactoryPatternInPhp\Problem\P1\Normal\Page;
 
 /**

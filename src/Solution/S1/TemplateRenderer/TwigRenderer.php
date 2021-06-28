@@ -1,8 +1,8 @@
 <?php
 
-namespace AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\TemplateRenderer;
+namespace AbstractFactoryPatternInPhp\Solution\S1\TemplateRenderer;
 
-use AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\TemplateRenderer;
+use AbstractFactoryPatternInPhp\Solution\S1\TemplateRenderer;
 
 /**
  * Class TwigRenderer

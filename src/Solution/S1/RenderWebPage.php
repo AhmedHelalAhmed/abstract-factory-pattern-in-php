@@ -1,6 +1,6 @@
 <?php
 
-namespace AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory;
+namespace AbstractFactoryPatternInPhp\Solution\S1;
 
 
 use AbstractFactoryPatternInPhp\Problem\P1\Normal\Page;

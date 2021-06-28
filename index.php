@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\TemplateFactory\PHPTemplateFactory;
-use AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\TemplateFactory\TwigTemplateFactory;
+use AbstractFactoryPatternInPhp\Solution\S1\TemplateFactory\PHPTemplateFactory;
+use AbstractFactoryPatternInPhp\Solution\S1\TemplateFactory\TwigTemplateFactory;
 use AbstractFactoryPatternInPhp\Problem\P1\Normal\Page;
 
 $page = new Page();
@@ -30,7 +30,7 @@ printSpaces();
 
 
 printSeparator('start abstract factory');
-$renderWebPage = new \AbstractFactoryPatternInPhp\Solution\S1\AbstractFactory\RenderWebPage($page);
+$renderWebPage = new \AbstractFactoryPatternInPhp\Solution\S1\RenderWebPage($page);
 $factoryInPHP = new PHPTemplateFactory();
 printSeparator('start php');
 echo $renderWebPage->render($factoryInPHP);
