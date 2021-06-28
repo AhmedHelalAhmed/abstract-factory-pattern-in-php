@@ -21,10 +21,10 @@ class RenderWebPage
         $this->page = $page;
     }
 
-    public function render(TemplateFactory $factory): string
+    public function render(TemplateFactory $factory): void
     {
         $pageTemplate = $factory->getPageTemplate();
         $renderer = $factory->getRenderer();
-        return $renderer->render($pageTemplate->getTemplateAsString($this->page));
+        $renderer->render($pageTemplate->getTemplateAsString($this->page));
     }
 }

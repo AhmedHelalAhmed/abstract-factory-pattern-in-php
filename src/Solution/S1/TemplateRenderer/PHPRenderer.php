@@ -12,10 +12,13 @@ class PHPRenderer implements TemplateRenderer
 {
     /**
      * @param string $templateString
-     * @return string
+     * @return void
      */
-    public function render(string $templateString): string
+    public function render(string $templateString): void
     {
-        return 'Render In PHP: ' . $templateString;
+        printSeparator('start php');
+        echo 'Render In PHP: ' . $templateString;
+        printSeparator('end php');
+
     }
 }

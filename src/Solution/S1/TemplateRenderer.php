@@ -7,5 +7,5 @@ namespace AbstractFactoryPatternInPhp\Solution\S1;
  */
 interface TemplateRenderer
 {
-    public function render(string $templateString): string;
+    public function render(string $templateString): void;
 }

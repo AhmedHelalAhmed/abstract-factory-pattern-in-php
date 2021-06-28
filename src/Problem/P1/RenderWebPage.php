@@ -30,9 +30,9 @@ class RenderWebPage
 
     /**
      * @param $type
-     * @return Exception|string
+     * @return void|Exception
      */
-    public function render($type): string
+    public function render($type)
     {
         $type = strtolower($type);
 
@@ -46,6 +46,16 @@ class RenderWebPage
     }
 
     /**
+     * @return void
+     */
+    private function renderInTwig(): void
+    {
+        printSeparator('start twig');
+        echo 'Render In Twig: ' . $this->getPageInTwig();
+        printSeparator('end twig');
+    }
+
+    /**
      * @return string
      */
     private function getPageInTwig(): string
@@ -56,6 +66,17 @@ class RenderWebPage
     }
 
     /**
+     * @return void
+     */
+    private function renderInPHP(): void
+    {
+        printSeparator('start php');
+        echo 'Render In PHP: ' . $this->getPageInPHP();
+        printSeparator('end php');
+
+    }
+
+    /**
      * @return string
      */
     private function getPageInPHP(): string
@@ -63,21 +84,5 @@ class RenderWebPage
         $title = $this->page->getTitle();
         $content = $this->page->getContent();
         return htmlentities("<div class='page'><h1><?= $title ?></h1><article class='content'><?= $content ?></article></div>");
-    }
-
-    /**
-     * @return string
-     */
-    private function renderInPHP(): string
-    {
-        return 'Render In PHP: '.$this->getPageInPHP();
-    }
-
-    /**
-     * @return string
-     */
-    private function renderInTwig(): string
-    {
-        return 'Render In Twig: '.$this->getPageInTwig();
     }
 }

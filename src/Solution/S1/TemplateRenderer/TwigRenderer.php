@@ -12,10 +12,12 @@ class TwigRenderer implements TemplateRenderer
 {
     /**
      * @param string $templateString
-     * @return string
+     * @return void
      */
-    public function render(string $templateString): string
+    public function render(string $templateString): void
     {
-        return 'Render In Twig: ' . $templateString;
+        printSeparator('start twig');
+        echo 'Render In Twig: ' . $templateString;
+        printSeparator('end twig');
     }
 }
