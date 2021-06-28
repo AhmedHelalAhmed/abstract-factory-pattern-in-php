@@ -20,7 +20,6 @@ printSeparator('end normal');
 
 printSpaces();
 printSpaces();
-printSpaces();
 
 
 printSeparator('start abstract factory');
@@ -29,4 +28,31 @@ $renderWebPage->render(new PHPTemplateFactory());
 $renderWebPage->render(new TwigTemplateFactory());
 printSeparator('end abstract factory');
 
+printSpaces();
+printSpaces();
+printSpaces();
 
+
+if(!isset($_GET['renderer'])){
+    return;
+}
+
+//======================> Validation
+$supportedRenderer = [
+    'php' => 'PHP',
+    'twig' => 'Twig',
+];
+
+$clientRequest = strtolower($_GET['renderer']);
+
+if (!in_array($clientRequest, array_keys($supportedRenderer))) {
+    throw new Exception('Renderer not Supported yet');
+}
+
+//======================> Validation
+
+printSeparator('start dynamic way');
+$renderer = sprintf("AbstractFactoryPatternInPhp\\Solution\\S1\\TemplateFactory\\%sTemplateFactory",
+    $supportedRenderer[$clientRequest]);
+$renderWebPage->render(new $renderer());
+printSeparator('end dynamic way');
