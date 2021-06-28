@@ -37,9 +37,9 @@ class RenderWebPage
         $type = strtolower($type);
 
         if ($type === RendererEnum::TWIG) {
-            return $this->getPageInTwig();
+            return $this->renderInTwig();
         } elseif ($type === RendererEnum::PHP) {
-            return $this->getPageInPHP();
+            return $this->renderInPHP();
         }
 
         return new Exception('Type not supported yet');
@@ -63,5 +63,21 @@ class RenderWebPage
         $title = $this->page->getTitle();
         $content = $this->page->getContent();
         return htmlentities("<div class='page'><h1><?= $title ?></h1><article class='content'><?= $content ?></article></div>");
+    }
+
+    /**
+     * @return string
+     */
+    private function renderInPHP(): string
+    {
+        return 'Render In PHP: '.$this->getPageInPHP();
+    }
+
+    /**
+     * @return string
+     */
+    private function renderInTwig(): string
+    {
+        return 'Render In Twig: '.$this->getPageInTwig();
     }
 }
