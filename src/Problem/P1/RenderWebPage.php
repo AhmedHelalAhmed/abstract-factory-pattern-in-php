@@ -1,14 +1,14 @@
 <?php
 
 
-namespace AbstractFactoryPatternInPhp\Problem\P1\Normal;
+namespace AbstractFactoryPatternInPhp\Problem\P1;
 
-use AbstractFactoryPatternInPhp\Problem\P1\Normal\Enums\RendererEnum;
+use AbstractFactoryPatternInPhp\Problem\P1\Enums\RendererEnum;
 use Exception;
 
 /**
  * Class RenderWebPage
- * @package AbstractFactoryPatternInPhp\Problem\P1\Normal
+ * @package AbstractFactoryPatternInPhp\Problem\P1\
  * @author Ahmed Helal Ahmed
  */
 class RenderWebPage

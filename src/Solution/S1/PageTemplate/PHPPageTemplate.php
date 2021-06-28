@@ -4,7 +4,7 @@
 namespace AbstractFactoryPatternInPhp\Solution\S1\PageTemplate;
 
 use AbstractFactoryPatternInPhp\Solution\S1\PageTemplate;
-use AbstractFactoryPatternInPhp\Problem\P1\Normal\Page;
+use AbstractFactoryPatternInPhp\Problem\P1\Page;
 
 /**
  * Class PHPPageTemplate

@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use AbstractFactoryPatternInPhp\Solution\S1\TemplateFactory\PHPTemplateFactory;
 use AbstractFactoryPatternInPhp\Solution\S1\TemplateFactory\TwigTemplateFactory;
-use AbstractFactoryPatternInPhp\Problem\P1\Normal\Page;
+use AbstractFactoryPatternInPhp\Problem\P1\Page;
 
 $page = new Page();
 $page->setContent('this is content');
@@ -12,7 +12,7 @@ $page->setTitle('this is title');
 
 
 printSeparator('start normal');
-$renderWebPage = new \AbstractFactoryPatternInPhp\Problem\P1\Normal\RenderWebPage($page);
+$renderWebPage = new \AbstractFactoryPatternInPhp\Problem\P1\RenderWebPage($page);
 printSeparator('start php');
 
 echo $renderWebPage->render('php');
