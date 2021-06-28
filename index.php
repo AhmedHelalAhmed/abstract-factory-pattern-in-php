@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+use AbstractFactoryPatternInPhp\Models\Page;
 use AbstractFactoryPatternInPhp\Solution\S1\TemplateFactory\PHPTemplateFactory;
 use AbstractFactoryPatternInPhp\Solution\S1\TemplateFactory\TwigTemplateFactory;
-use AbstractFactoryPatternInPhp\Problem\P1\Page;
 
 $page = new Page();
 $page->setContent('this is content');

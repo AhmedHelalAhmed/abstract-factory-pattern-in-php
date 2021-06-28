@@ -3,7 +3,7 @@
 namespace AbstractFactoryPatternInPhp\Solution\S1;
 
 
-use AbstractFactoryPatternInPhp\Problem\P1\Page;
+use AbstractFactoryPatternInPhp\Models\Page;
 
 /**
  * Class RenderWebPage

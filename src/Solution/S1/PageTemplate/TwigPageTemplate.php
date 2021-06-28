@@ -3,8 +3,8 @@
 
 namespace AbstractFactoryPatternInPhp\Solution\S1\PageTemplate;
 
+use AbstractFactoryPatternInPhp\Models\Page;
 use AbstractFactoryPatternInPhp\Solution\S1\PageTemplate;
-use AbstractFactoryPatternInPhp\Problem\P1\Page;
 
 /**
  * Class TwigPageTemplate

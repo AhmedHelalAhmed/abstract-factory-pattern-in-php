@@ -3,6 +3,7 @@
 
 namespace AbstractFactoryPatternInPhp\Problem\P1;
 
+use AbstractFactoryPatternInPhp\Models\Page;
 use AbstractFactoryPatternInPhp\Problem\P1\Enums\RendererEnum;
 use Exception;
 

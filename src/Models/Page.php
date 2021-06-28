@@ -1,6 +1,6 @@
 <?php
 
-namespace AbstractFactoryPatternInPhp\Problem\P1;
+namespace AbstractFactoryPatternInPhp\Models;
 
 /**
  * Page data
